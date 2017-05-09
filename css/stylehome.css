@@ -1,0 +1,46 @@
+#carousel1{max-height:635px;}
+.item{max-height:620px;}
+body{
+	
+	/*background:url(../img/h1.jpg)!important;*/
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	background-color:rgba(255,255,255,1.00);
+	}
+h1{color:rgba(247,239,239,1.00);}	
+.thumbnail 
+{
+    position:relative;
+    overflow:hidden;
+    margin-top: 50px;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	background:rgba(255,255,255,1.00);
+}
+ 
+.caption 
+{
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(20,119,237,0.49);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align: left;
+    color:#000 !important;
+    z-index:2;
+}
+
+
+.container-fluid{
+padding-left:1px;
+padding-right:1px;}
+
+.menuhover{text-align:center;}
+
+button:focus {
+  outline: none;
+}
+
+#defaultNavbar1.form-control{padding-right:30px;}
+

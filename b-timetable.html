@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timetables</title>
+
+<!-- Bootstrap -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<link href="css/bstyle.css" rel="stylesheet" type="text/css">
+<link href="css/style5.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/t-style.css" rel="stylesheet" type="text/css">
+
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/modernizr.js"></script>
+
+</head>
+<body>
+<nav> 
+  <div class="container-fluid navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1" aria-expanded="false"><span class="sr-only">Nav bar</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    
+    <a class="navbar-brand" style="padding-right:170px"><b>Fitness Center</b></a></div>
+  <div class="collapse navbar-collapse" id="defaultNavbar1">
+  <ul class="nav navbar-nav navbar-left">
+      
+      <li class=""><a href="home.html">Home<span class="sr-only">(current)</span></a></li>
+      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup=  "true" aria-expanded="false">Tutorials<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="beginner.html">Beginner</a></li>
+          <li><a href="intermediate.html">Intermediate</a></li>
+          <li><a href="Advanced.html">Advanced</a></li>
+        </ul>
+      </li>
+
+      <li class="active"><a href="b-timetable.html">Timetable</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav">
+        <li><a href="wcoach.html">Coach</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="question.php"> Q & A Forum</a></li>
+        <li><a href="about.html">About Us</a></li>
+     </ul>
+    
+    <form class="navbar-form navbar-left" role="login">
+      <button type="login" class="btn btn-default"> <a href="loginP.php">Log In</a></button>
+    </form>
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+       </form>
+      </div>
+
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+
+<br>
+<br>
+
+
+<div class="cd-schedule loading">
+	<div class="timeline">
+		<ul>
+			<li><span>09:00</span></li>
+			<li><span>09:30</span></li>
+			<li><span>10:00</span></li>
+			<li><span>10:30</span></li>
+			<li><span>11:00</span></li>
+			<li><span>11:30</span></li>
+			<li><span>12:00</span></li>
+			<li><span>12:30</span></li>
+			<li><span>13:00</span></li>
+			<li><span>13:30</span></li>
+			<li><span>14:00</span></li>
+			<li><span>14:30</span></li>
+			<li><span>15:00</span></li>
+			<li><span>15:30</span></li>
+			<li><span>16:00</span></li>
+			<li><span>16:30</span></li>
+			<li><span>17:00</span></li>
+			<li><span>17:30</span></li>
+			<li><span>18:00</span></li>
+		</ul>
+	</div> <!-- .timeline -->
+
+	<div class="events">
+		<ul>
+			<li class="events-group">
+				<div class="top-info"><span>Monday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+                            <em class="event-coach">Alex Jordan</em>
+                            
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Tuesday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Wednesday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Thursday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
+						<a href="#0">
+							<em class="event-name">Restorative Yoga</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="events-group">
+				<div class="top-info"><span>Friday</span></div>
+
+				<ul>
+					<li class="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
+						<a href="#0">
+							<em class="event-name">Rowing Workout</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
+						<a href="#0">
+							<em class="event-name">Abs Circuit</em>
+						</a>
+					</li>
+
+					<li class="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
+						<a href="#0">
+							<em class="event-name">Yoga Level 1</em>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="event-modal">
+		<header class="header">
+			<div class="content">
+				<span class="event-date"></span>
+				<h3 class="event-name"></h3>
+			</div>
+
+			<div class="header-bg"></div>
+		</header>
+
+		<div class="body">
+			<div class="event-info"></div>
+			<div class="body-bg"></div>
+		</div>
+
+		<a href="#0" class="close">Close</a>
+	</div>
+
+	<div class="cover-layer"></div>
+</div> <!-- .cd-schedule -->
+
+
+ <br>
+<br>
+
+<footer class="Cfooter">
+
+<div class="container">
+        <div class="topFooter">
+            <div class="footMenu-1" style="">
+                <h4 class="footerTitle">
+                    contact
+                </h4>
+                <ul>
+                    
+
+    <li>
+        <a href="home.html"> FC News</a>
+    </li>
+
+    <li>
+        <a href="about.html"> FC Founders </a>
+    </li>
+
+    <li>
+        <a href="about.html"> WorkPlace</a>
+    </li>
+
+    <li>
+        <a href="about.html"> Admin's Office</a>
+    </li>
+
+    <li>
+        <a href="about.html"> Contact US</a>
+    </li>
+
+                </ul>
+            </div>
+            <div class="footMenu-2" style="">
+                <h4 class="footerTitle">
+                    Tutorials
+                </h4>
+                <ul>
+                    
+
+    <li>
+        <a href="beginner.html"> Beginner</a>
+    </li>
+    
+    <li>
+        <a href="intermediate.html"> Intermediate</a>
+    </li>
+
+    <li>
+        <a href="Advanced.html"> Advanced</a>
+    </li>
+
+                </ul>
+            </div>
+            <div class="footMenu-3" style="">
+                <h4 class="footerTitle">
+                    TIMETABLE
+                </h4>
+                <ul>
+                    
+
+    <li>
+        <a href="b-timetable.html"> MONDAY</a>
+    </li>
+
+    <li>
+        <a href="b-timetable.html"> TUESDAY</a>
+    </li>
+
+    <li>
+        <a href="b-timetable.html"> WENESDEY</a>
+    </li>
+
+    <li>
+        <a href="b-timetable.html"> THURSDAY</a>
+    </li>
+    
+     <li>
+        <a href="b-timetable.html"> FRIDAY</a>
+    </li>
+    
+    <li>
+        <a href="b-timetable.html"> SATURDAY</a>
+    </li>
+
+                </ul>
+            </div> 
+            <div class="footMenu-4" style="">
+             <h4 class="footerTitle">
+                    ADDRESS
+                </h4>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="310" height="160" id="gmap_canvas" src="https://maps.google.com/maps?q=Uzbekistan, Tashkent City, Mirzo Ulugbek district , Ziyolilar Street 9, &t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><script src="http://www.embedgooglemap.net/mapscript.js"></script><br>9 Ziyolilar Street, Mirzo Ulugbek District, <a href="http://www.embedgooglemap.net">Tashkent<br></a></div><style>.mapouter{overflow:hidden;height:200px;width:400px;}.gmap_canvas {background:none!important;height:200px;width:400px;}</style></div>
+                
+           
+            </div>
+        </div>
+    
+        <div class="BottomFooter">
+            <div class="copyRight">
+                © 2017 FITNESS CENTER IN TASHKENT
+            </div>
+           
+            <div class="contact-phone">
+            <th>Contact:</th> 
+            <th>+99894-437-97-70</th> 
+            <th>+99899-999-00-00</th>
+            </div>
+            
+            
+            
+            <div class="ShareThisPage">     
+                                                                                                                                            <ul>
+               <li><a href="http://telegram.me/fitnesscenter.uz"><img src="img/tg.jpg" alt="Telegram" style="width: 32px;margin-top: 2px;float: right;margin-left: 15px; "></a></li>
+               <li class="soc_icon_fb"><a href="https://www.facebook.com/fitness-center?ref=bookmarks">fb</a></li>
+               <li class="soc_icon_tw"><a href="https://www.youtube.com/channel/UC61W3C4BGMIIzYU6orDzzTw">tw</a></li>
+               <li class="soc_icon_gP"><a href="https://instagram.com/fitness-center/">gP</a></li>
+               <li class="soc_icon_in"><a href="https://plus.google.com/FitnessC">in</a></li>                
+               <li class="soc_icon_yt"><a href="https://twitter.com/Fitness_Center">yt</a></li>                
+               </ul>
+                                                                                                                                                
+                                                                                                                                                    </div>
+                    </div>
+                </div>
+            </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');</script>
+<script src="js/main.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

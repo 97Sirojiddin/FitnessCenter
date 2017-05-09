@@ -1,0 +1,12 @@
+#carousel1{max-height:653px;}
+.item{max-height:650px;}
+body{
+	
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+	background-color:rgba(255,255,255,1.00);
+	}
+h1{color:rgba(247,239,239,1.00);}	
+.container-fluid{
+padding-left:1px;
+padding-right:1px;}
+

@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.container-fluid{
+padding-left:1px;
+padding-right:1px;}
+.placeholder{ max-height:500px;
+max-width:600px;}
+.left_article{
+	position:relative;
+	margin-left: 0px;
+	display: inline-block;
+	float: left;
+	border-style: solid;
+	border-radius: 10px;
+}
+.down_article{
+	position: relative;
+	float: right;
+	
+}
+.right_article{position:relative;
+float:right;
+display:inline-block;}

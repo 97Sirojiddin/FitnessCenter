@@ -1,0 +1,10 @@
+@charset "utf-8";
+h1{color:#CD2023;}
+.thumbnail{margin-left:10px;
+margin-right:10px;}
+
+video {  
+   width:100%;
+   max-width:500px; 
+   height:auto; 
+}

@@ -1,0 +1,447 @@
+/* LESS Document */
+
+@media screen and (min-width: 981px){
+	html{
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 980px){
+	html{
+		font-size: 9px;
+	}
+}
+
+body{
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+}
+
+.container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+}
+
+.title{
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.cards{
+  margin-bottom: 5rem;
+}
+
+/*
+ * Core styles for Usercard
+ */
+
+.usercard{
+	
+	box-sizing: border-box;
+	display: flex;
+	
+}
+
+.usercard__body{
+	flex-grow: 2;
+	
+}
+
+.usercard__icon{
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+
+.usercard__title{
+	margin: 0;
+}
+
+.usercard__name{
+	margin: 0;
+}
+
+.usercard__stats{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.usercard__stats-item{
+    
+	box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+}
+
+.usercard__social{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+}
+
+.usercard__social-icon{
+	display: inline-block;
+}
+
+.usercard__social-name{
+	position: absolute;
+	left: -9999px;
+}
+
+/*
+ *Styles for Material Skin
+ */
+
+.usercard_skin-material{
+	background-color:rgba(19,167,63,0.49);
+ 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+	font-weight: 300;		
+	
+	.usercard__body{
+		padding-bottom: 4rem;
+	} 
+
+	.usercard__title{
+		margin-bottom: 1.5em;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 150%;
+	}
+
+	.usercard__header{
+		margin-bottom: 4rem;
+		padding: 3rem 4%;
+	}
+
+	.usercard__avatar{
+		border-radius: 50%;
+		border: 5px solid;
+		box-sizing: border-box;
+	}
+
+	.usercard__name{
+		line-height: 1;
+		font-weight: 700;
+	}
+
+	.usercard__name-label{
+		font-weight: 300;
+	}
+
+	.usercard__content{
+		padding-right: 4%;
+		padding-left: 4%;	
+	}
+
+	.usercard__stats-name{
+		font-size: 110%;
+		font-weight: 700;
+		display: block;
+	}
+
+	.usercard__stats-value{
+		display: block;
+		margin-top: .2em;
+		text-decoration: none;
+	}
+
+	.usercard__footer{
+		padding: 2rem 4%;  
+	}
+}
+
+/*
+ * Detailed card 
+ */
+
+.usercard_skin-material_mod-detailed{
+	
+	flex-direction: column;  
+	text-align: center;
+
+	.usercard__name{
+		margin-top: .3em;
+		font-size: 250%;
+	}
+
+	.usercard__post{
+		margin-top: .5em;
+		margin-bottom: .5em;
+		font-size: 110%;
+	}
+
+	.usercard__social{
+		margin-right: 1.5rem;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}	
+}
+ 
+/*
+ * Simple card 
+ */
+
+.usercard_skin-material_mod-simple{
+	
+	padding: 3rem 2rem;
+	align-items: center;
+
+	.usercard__name{
+		font-size: 200%;
+		margin-bottom: .2em;
+	}
+	
+	.usercard__post{
+		margin-bottom: .5em;
+		font-size: 100%;
+	}
+	
+	.usercard__info{
+		margin-left: 5%;
+		width: 70%;
+	} 	
+		
+	.usercard__social{
+		
+		margin-right: 1rem;
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}	
+} 
+  
+/*
+ * Demo styles for Usercard
+ */
+
+@main-color: #512DA8;
+@optional-color: #673AB7;
+@main-color2: #303F9F;
+@optional-color2: #3F51B5;
+
+.cards{
+	background-color:rgba(19,167,63,0.49);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.usercard{
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+ 
+@media screen and (min-width: 981px){
+	.usercard{
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 641px) and (max-width: 980px){
+	.usercard{
+		width: 48%;
+	}
+}
+
+
+@media screen and (max-width: 640px){
+	
+	.usercard{
+		width: 100%;
+	}
+}
+
+.usercard_skin-material_mod-detailed{
+	.usercard__avatar{
+		width: 13rem;
+		height: 13rem; 
+	}	
+}
+
+.usercard_skin-material_mod-simple{
+	.usercard__avatar{
+		width: 10rem;
+		height: 10rem; 
+	}		
+} 
+
+.usercard_skin-material_mod-simple, .usercard__footer{
+	background-color: @main-color;
+	color: #fff; 
+}
+
+.usercard_blue{
+    
+  &.usercard_skin-material_mod-simple, .usercard__footer{
+    background-color: @main-color2;
+  }
+  
+  .usercard__header{
+	  background: linear-gradient(to top, @main-color2, @optional-color2);
+  }
+  
+  .usercard__title{	
+    color: @optional-color2;
+  }
+  
+  .icon-earth{
+    background-image: url("https://stas-melnikov.ru/usercards/earth_blue.svg")
+  }
+
+  .icon-location{
+    background-image: url("https://stas-melnikov.ru/usercards/location_blue.svg")
+  }
+
+  .icon-calendar{
+    background-image: url("https://stas-melnikov.ru/usercards/calendar_blue.svg")
+  }
+
+  .icon-man-woman{
+    background-image: url("https://stas-melnikov.ru/usercards/man-woman_blue.svg")
+  }  
+  
+  .icon-html{
+    background-image: url("https://stas-melnikov.ru/usercards/html_blue.svg")
+  }
+
+  .icon-css{
+    background-image: url("https://stas-melnikov.ru/usercards/css_blue.svg")
+  }
+
+  .icon-email{
+    background-image: url("https://stas-melnikov.ru/usercards/email_blue.svg")
+  }
+
+  .icon-phone{
+    background-image: url("https://stas-melnikov.ru/usercards/phone_blue.svg")
+  }
+
+  .icon-whatsapp{
+    background-image: url("https://stas-melnikov.ru/usercards/whatsapp_blue.svg")
+  }
+
+  .icon-skype{
+    background-image: url("https://stas-melnikov.ru/usercards/skype_blue.svg")
+  }  
+}
+
+.usercard__body{
+	background-color: #fff;
+	color: #000;
+}	
+
+.usercard__header{
+  background: linear-gradient(to top, @main-color, @optional-color);
+  color: #fff; 
+}
+
+.usercard__title{	
+	color: @optional-color;
+}
+
+.usercard__avatar{
+	border-color: #fff;
+}
+
+.usercard__stats-item{
+    
+    width: 48%;
+    margin-top: 3rem;
+  
+    &:first-child, &:nth-child(2){
+		margin-top: 0;
+    }
+}
+
+.usercard__stats-icon{
+	width: 3.6rem;
+	height: 3.6rem;
+	margin-bottom: 1rem;
+}
+
+.usercard__stats-value{
+	color: #000;
+}
+
+.usercard__social-icon{
+	width: 2rem;
+	height: 2rem;
+}
+
+.icon-earth{
+	background-image: url("https://stas-melnikov.ru/usercards/earth.svg")
+}
+
+.icon-location{
+	background-image: url("https://stas-melnikov.ru/usercards/location.svg")
+}
+
+.icon-calendar{
+	background-image: url("https://stas-melnikov.ru/usercards/calendar.svg")
+}
+
+.icon-man-woman{
+	background-image: url("https://stas-melnikov.ru/usercards/man-woman.svg")
+}
+
+.icon-twitter{
+	background-image: url("https://stas-melnikov.ru/usercards/twitter.svg")
+}
+
+.icon-linkedin{
+	background-image: url("https://stas-melnikov.ru/usercards/linkedin.svg")
+}
+
+.icon-codepen{
+	background-image: url("https://stas-melnikov.ru/usercards/codepen.svg")
+}
+
+.icon-html{
+	background-image: url("https://stas-melnikov.ru/usercards/html.svg")
+}
+
+.icon-angular{
+	background-image: url("https://stas-melnikov.ru/usercards/angular.svg")
+}
+
+.icon-css{
+	background-image: url("https://stas-melnikov.ru/usercards/css.svg")
+}
+
+.icon-js{
+	background-image: url("https://stas-melnikov.ru/usercards/server-js.svg")
+}
+
+.icon-email{
+	background-image: url("https://stas-melnikov.ru/usercards/email.svg")
+}
+
+.icon-phone{
+	background-image: url("https://stas-melnikov.ru/usercards/phone.svg")
+}
+
+.icon-whatsapp{
+	background-image: url("https://stas-melnikov.ru/usercards/whatsapp.svg")
+}
+
+.icon-skype{
+	background-image: url("https://stas-melnikov.ru/usercards/skype.svg")
+}
